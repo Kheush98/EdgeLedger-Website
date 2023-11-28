@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* h1, h2, h3 {
+    padding: 1rem 0.5rem;
+} */
+
+p {
+    padding: 1rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+header {
+    height: 100vh;
+    background: url('../img/home/showcase.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+#nav-bar {
+    display: flex;
+    padding: 1rem 0.5rem;
+}
+
+#nav-bar ul {
+    display: flex;
+}
+
