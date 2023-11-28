@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,15 +7,19 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* h1, h2, h3 {
-    padding: 1rem 0.5rem;
-} */
+h1, h2, h3 {
+    font-weight: 300;
+    line-height: 1.2;
+}
 
 p {
-    padding: 1rem 0;
+    margin: 10px 0;
 }
 
 ul {
@@ -22,22 +28,84 @@ ul {
 
 a {
     text-decoration: none;
+    color: #333;
+}
+
+img {
+    width: 100%;
+}
+
+/* Nave Bar */
+#nav-bar {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+}
+
+#nav-bar nav ul {
+    display: flex;
+}
+
+#nav-bar nav ul a {
     color: white;
+    font-size: medium;
+    padding: 10px 20px;
+}
+
+#nav-bar nav ul a:hover {
+    border-bottom: #28a745 solid 2px;
+}
+
+#nav-bar .logo {
+    font-weight: 400;
 }
 
 /* Header */
-header {
+.hero {
     height: 100vh;
     background: url('../img/home/showcase.jpg') no-repeat center center/cover;
+    position: relative;
     color: white;
 }
 
-#nav-bar {
+.hero .content {
     display: flex;
-    padding: 1rem 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20px;
 }
 
-#nav-bar ul {
-    display: flex;
+.hero .content h1 {
+    font-size: 55px;
 }
 
+.hero .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: 0.5;
+}
+
+.hero * {
+    z-index: 5;
+}

@@ -1,0 +1,43 @@
+
+.primary-text {
+    color: #28a745;
+}
+
+.secondary-text {
+    color: #0284d0;
+}
+
+.btn {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-primary {
+    background: #28a745;
+    color: white;
+}
+.btn-secondary {
+    background: #0284d0;
+    color: white;
+}
+.btn-dark {
+    background: #333;
+    color: white;
+}
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.current {
+    border-bottom: #28a745 solid 2px;
+}
