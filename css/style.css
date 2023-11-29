@@ -128,4 +128,12 @@ img {
     margin-bottom: 15px;
 }
 
-/* Main section */
+.cases img:hover {
+    opacity: 0.7;
+}
+
+/* Team */
+.pro img {
+    margin: 0 20px;
+    border-radius: 50%;
+}
